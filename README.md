@@ -2,6 +2,14 @@
 
 A very simple JavaScript implementation of the classic Snake game.
 
+## Screenshots
+
+### Desktop View
+![Desktop View](./desctop-view.png)
+
+### Mobile View
+![Mobile View](./mobile-view.png)
+
 ## Description
 
 This is a minimalist version of the Snake game built with vanilla JavaScript, HTML5 Canvas, and CSS. The game features a clean interface and works on both desktop and mobile devices.
