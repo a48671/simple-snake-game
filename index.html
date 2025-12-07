@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Snake Game in JavaScript</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Snake</h1>
+        <div class="info">
+            <span class="score-label">Score: </span>
+            <span id="score-value" class="score-value">0</span>
+        </div>
+        <canvas id="game-canvas" width="400" height="400"></canvas>
+        <div class="instruction">Press Arrow Keys to mange the Snake direction</div>
+        
+        <!-- Mobile controls -->
+        <div class="mobile-controls">
+            <div class="controls-row">
+                <button id="btn-up" class="arrow-btn">▲</button>
+            </div>
+            <div class="controls-row">
+                <button id="btn-left" class="arrow-btn">◄</button>
+                <div class="btn-spacer"></div>
+                <button id="btn-right" class="arrow-btn">►</button>
+            </div>
+            <div class="controls-row">
+                <button id="btn-down" class="arrow-btn">▼</button>
+            </div>
+            <button id="btn-restart" class="restart-btn">Restart Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
