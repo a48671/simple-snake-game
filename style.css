@@ -16,6 +16,11 @@ body {
 
 .game-container {
     text-align: center;
+    position: relative;
+}
+
+.header {
+    display: block;
 }
 
 h1 {
@@ -77,23 +82,26 @@ h1 {
 }
 
 .restart-btn {
-    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     visibility: hidden;
     opacity: 0;
-    margin: 20px auto 0 auto;
     padding: 12px 40px;
     font-size: 20px;
     font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.9);
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 8px;
-    color: #ffffff;
+    color: #3da79f;
     cursor: pointer;
     transition: all 0.2s;
     user-select: none;
     height: 80px;
     width: 260px;
     -webkit-tap-highlight-color: transparent;
+    z-index: 1000;
 }
 
 .restart-btn:active {
@@ -106,6 +114,10 @@ h1 {
     opacity: 1;
 }
 
+.restart-btn:active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
 /* Show controls only on mobile devices */
 @media (max-width: 768px), (hover: none) and (pointer: coarse) {
     .mobile-controls {
@@ -114,6 +126,27 @@ h1 {
     
     .instruction {
         display: none;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    
+    h1 {
+        margin-bottom: 0;
+        font-size: 24px;
+    }
+    
+    .info {
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+    
+    .mobile-controls {
+        margin-top: 15px;
     }
 }
 
