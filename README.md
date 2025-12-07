@@ -2,6 +2,8 @@
 
 A very simple JavaScript implementation of the classic Snake game.
 
+🎮 **[Play the game here!](https://a48671.github.io/simple-snake-game/)**
+
 ## Screenshots
 
 ### Desktop View
